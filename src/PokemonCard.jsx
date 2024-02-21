@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function PokemonCard({ name, icon, typeIcon }) {
+export default function PokemonCard({ name, icon, typeIcon, onClickHandler }) {
   return (
-    <div className="pokemon-card">
+    <div className="pokemon-card" onClick={onClickHandler}>
       <div className="image-container">
         <img src={icon} alt={name} className="pokemon-image" />
       </div>
